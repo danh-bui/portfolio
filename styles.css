@@ -222,6 +222,10 @@ h1 {
     width: 100%;
   }
 
+.home__skill-img {
+  margin-left: 3rem;
+}
+
   .home__right {
     width: 100%;
     margin-top: 2rem;
@@ -336,7 +340,7 @@ h1 {
 
 @media (max-width: 768px) {
   .contact__link {
-    width: 70%;
+    width: 100%;
   }
 }
 
