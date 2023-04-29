@@ -28,6 +28,12 @@ h1 {
   font-weight: 900;
 }
 
+@media(max-width: 768px) {
+  section {
+    padding: var(--navbar-height) 2rem 0;
+  }
+}
+
 /* SECTION: NAVBAR */
 #nav {
   /* height: 10vh; */
@@ -111,7 +117,7 @@ h1 {
 
 @media(max-width: 768px) {
   #nav {
-    /* height: 8vh; */
+    padding: 0 2rem;
   }
   #nav.active {
     border-bottom: none;
