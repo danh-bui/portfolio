@@ -290,6 +290,10 @@ h1 {
 }
 
 @media(max-width: 768px) {
+  .project__list {
+    width: 100%;
+  }
+
   .project__item {
     flex-direction: column;
   }
