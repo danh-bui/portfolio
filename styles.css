@@ -31,6 +31,7 @@ h1 {
 @media(max-width: 768px) {
   section {
     padding: var(--navbar-height) 2rem 0;
+    height: auto;
   }
 }
 
@@ -115,25 +116,31 @@ h1 {
   background-color: #f2faff;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   #nav {
     padding: 0 2rem;
   }
+
   #nav.active {
     border-bottom: none;
   }
+
   .nav__hamburger {
     display: block;
   }
+
   .nav__hamburger.active .nav__hamburger__bar:nth-child(2) {
     opacity: 0;
   }
+
   .nav__hamburger.active .nav__hamburger__bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .nav__hamburger.active .nav__hamburger__bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .nav__links {
     position: fixed;
     top: calc(-3 * var(--navbar-height));
@@ -149,9 +156,9 @@ h1 {
     backdrop-filter: blur(5px);
     width: 100%;
     text-align: center;
-    transition: 0.3s ease-out;
-    /* z-index: 1; */
+    transition: 0.2s ease-in-out;
   }
+
   .nav__link {
     margin: 16px 0;
     width: 100%;
@@ -159,6 +166,7 @@ h1 {
     margin: 0;
     height: var(--navbar-height);
   }
+
   .nav__links.active {
     top: var(--navbar-height);
     border-top: none;
@@ -177,8 +185,6 @@ h1 {
 .home__left {
   width: 60%;
 }
-
-.home__title {}
 
 .home__subtitle {
   line-height: 2;
@@ -204,6 +210,22 @@ h1 {
   width: 100%;
   border-radius: 20px;
   box-shadow: 4px 4px 4px #00d0ff;
+}
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+  }
+
+  .home__left {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .home__right {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 
 /* SECTION: PROJECTS */
@@ -267,6 +289,17 @@ h1 {
   z-index: 1;
 }
 
+@media(max-width: 768px) {
+  .project__item {
+    flex-direction: column;
+  }
+
+  .project__image {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+  }
+}
+
 /* SECTION: CONTACT */
 #contact {
   height: 85vh;
@@ -295,7 +328,12 @@ h1 {
   font-weight: 700;
   font-size: 1.4rem;
   color: #333333;
+}
 
+@media (max-width: 768px) {
+  .contact__link {
+    width: 70%;
+  }
 }
 
 /* SECTION: FOOTER */
@@ -306,7 +344,4 @@ h1 {
   align-items: center;
   justify-content: center;
   color: #f2faff;
-}
-
-.footer__description {
 }
