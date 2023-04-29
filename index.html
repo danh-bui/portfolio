@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Danh Bui</title>
+	</head>
+	<body>
+		<nav id="nav">
+			<div class="nav__left">
+				<h1 class="nav__title">Danh Bui</h1nav__title>
+			</div>
+			<div class="nav__right">
+				<ul class="nav__links">
+					<a href="#home" class="nav__link">
+						<li>Home</li>
+					</a>
+					<a href="#projects" class="nav__link">
+						<li>Projects</li>
+					</a>
+					<a href="#contact" class="nav__link">
+						<li>Contact</li>
+					</a>
+				</ul>
+			</div>
+      <div class="nav__hamburger">
+        <span class="nav__hamburger__bar"></span>
+        <span class="nav__hamburger__bar"></span>
+        <span class="nav__hamburger__bar"></span>
+      </div>
+		</nav>
+		<section id="home">
+			<div class="home__left">
+				<h1 class="home__title">Hi! I'm Danh!</h1>
+				<h2 class="home__subtitle">I'm a frontend web developer.</h2>
+				<p>
+					I am dedicated to help <strong>YOU</strong> have the online presence
+					<strong>YOU</strong> need.
+				</p>
+
+				<p>
+					I am committed to deliver the BEST work possible. If you are not 100%
+					satisfied with it, I will personally offer you a refund.
+				</p>
+
+        <p>Here are some of my skills:</p>
+        <img class="home__skill-img" src="./images/html-5.png" title="HTML 5 icon" alt="HTML 5">
+        <img class="home__skill-img" src="./images/css-3.png" title="CSS 3 icon" alt="CSS 3">
+        <img class="home__skill-img" src="./images/js.png" title="JS icon" alt="Javascript">
+        <img class="home__skill-img" src="./images/bootstrap-5.png" title="Bootstrap 5 icon" alt="Bootstrap 5">
+        <img class="home__skill-img" src="./images/sass.png" title="Sass icon" alt="Sass">
+			</div>
+			<div class="home__right">
+				<img src="./images/profile-picture-cropped.jpg" alt="Profile Picture" class="home__profile-picture"/>
+			</div>
+		</section>
+		<section id="projects">
+      <h1 class="projects__title">My Projects</h1>
+      <div class="project__list">
+        <div class="project__item">
+          <img class="project__image" src="./images/natours-project-thumbnail.png" als="Natours Project Image">
+          <div class="project__description">
+            <p>This is a project from the course <a href="https://www.udemy.com/course/advanced-css-and-sass/">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a> of Jonas Schmedtmann. It's a beautiful landing page of a fictional tourism company specializing in providing outdoor trips</p>
+            <p>The technologies used to build this website include:</p>
+            <ul>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+          <a href="https://danh-bui.github.io/natours/" target=”_blank”>
+            <span class="project__link"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+		<section id="contact">
+      <h1 class="contact__title">
+        Interested?
+      </h1>
+      <a href = "mailto:buixuanbaodanh@gmail.com" class="contact__link">Work with me!</a>
+    </section>
+    <footer id="footer">
+      <p class="footer__description">Designed and built by Danh Bui.</p>
+    </footer>
+		<script src="app.js"></script>
+	</body>
+</html>
